@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deviant Art - Clone</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navigation">
+        <ul class="navigation__list navigation__list--1">
+            <li class="navigation__item"><a href="#" class="navigation__link navigation__logo colored">🍥ClonedArt</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">More</a></li>
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">
+                    <svg class="navigation__icon icon navigation__search">
+                        <use xlink:href="img/sprite.svg#icon-search"></use>
+                    </svg>
+                    Search
+                </a>
+            </li>
+        </ul>
+
+        <ul class="navigation__list navigation__list--2">
+            <li class="navigation__item"><a href="#" class="navigation__link">Join</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Log in</a></li>
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">
+                    <svg class="navigation__icon icon navigation__user">
+                        <use xlink:href="img/sprite.svg#icon-user"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="navigation__item"><a href="#" class="navigation__link colored">Submit</a></li>
+        </ul>
+
+
+
+    </nav>
+    <!-- END OF NAVIGATION -->
+    <!-- HEADER -->
+    <header class="header">
+        <div class="profile">
+            <img src="img/profile.jpg" alt="user profile" class="profile__img">
+            <div class="profile__text">
+                <h1 class="profile__name">
+                    Ellie
+                <svg class="icon profile__icon">
+                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                </h1>
+                <p class="profile__desc">It can't be for nothing...</p>
+                <p class="profile__stats">
+                    <span class="profile__stat">1M Watchers</span>
+                    <span class="profile__stat">10.3M Page Views</span>
+                    <span class="profile__stat">500 Deviations</span>
+                    <span class="profile__stat">999 Comments</span>
+                    <span class="profile__stat">200 Favorites</span>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- END OF HEADER -->
+    <main class="container">
+        <nav class="profilenav u-marbot-big">
+            <ul class="profilenav__list profilenav__list--1">
+                <li class="profilenav__item"><a href="#" class="profilenav__link">ABOUT</a></li>
+                <li class="profilenav__item"><a href="#" class="profilenav__link">HOME</a></li>
+                <li class="profilenav__item"><a href="#" class="profilenav__link">GALLERY</a></li>
+                <li class="profilenav__item"><a href="#" class="profilenav__link">FAVORITES</a></li>
+                <li class="profilenav__item"><a href="#" class="profilenav__link">POSTS</a></li>
+                <li class="profilenav__item"><a href="#" class="profilenav__link">SHOP</a></li>
+            </ul>
+
+            <ul class="profilenav__list profilenav__list--2">
+                <li class="profilenav__item">
+                    <a href="#" class="profilenav__link">
+                        <svg class="profilenav__icon icon profilenav__icon--share">
+                            <use xlink:href="img/sprite.svg#icon-share"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="profilenav__item">
+                    <a href="#" class="profilenav__link">
+                        <svg class="profilenav__icon icon profilenav__icon--heart">
+                            <use xlink:href="img/sprite.svg#icon-heart-outlined"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="profilenav__item"><a href="#" class="profilenav__link profilenav__note">SEND NOTE</a></li>
+                <li class="profilenav__item"><a href="#" class="profilenav__link profilenav__watch">+ WATCH</a></li>
+            </ul>
+
+            
+        </nav>
+
+        <section class="latest">
+            <h2 class="text-primary-1 u-marbot-small">Latest Deviations</h2>
+            <div class="gallery u-marbot-big">
+                <div class="deviation">
+                    <div class="img-stats">
+                        <div class="img-stats__stat">
+                            <h4 class="img-stats__title">Everything that I've done</h4>
+                            <span class="img-stats__comment">
+                                69
+                                <svg class="img-stats__icon icon">
+                                    <use xlink:href="img/sprite.svg#icon-message"></use>
+                                </svg> 
+                            </span>
+                        </div>
+                        <div class="img-stats__stat">
+                            <img src="img/profile.jpg" alt="profile" class="img-stats__profile">
+                            <h4 class="profile__name profile__name--small">
+                                Ellie
+                            <svg class="icon profile__icon profile__icon--small">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            </h4>
+                            <span class="img-stats__star">
+                                2987
+                                <svg class="img-stats__icon icon">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg> 
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="deviation deviation--1">
+                    <div class="img-stats">
+                        <div class="img-stats__stat">
+                            <h4 class="img-stats__title">Where is Dina?</h4>
+                            <span class="img-stats__comment">
+                                31
+                                <svg class="img-stats__icon icon">
+                                    <use xlink:href="img/sprite.svg#icon-message"></use>
+                                </svg> 
+                            </span>
+                        </div>
+                        <div class="img-stats__stat">
+                            <img src="img/profile.jpg" alt="profile" class="img-stats__profile">
+                            <h4 class="profile__name profile__name--small">
+                                Ellie
+                            <svg class="icon profile__icon profile__icon--small">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            </h4>
+                            <span class="img-stats__star">
+                                1187
+                                <svg class="img-stats__icon icon">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg> 
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="deviation deviation--2">
+                    <div class="img-stats">
+                        <div class="img-stats__stat">
+                            <h4 class="img-stats__title">It can't be for nothing..</h4>
+                            <span class="img-stats__comment">
+                                0
+                                <svg class="img-stats__icon icon">
+                                    <use xlink:href="img/sprite.svg#icon-message"></use>
+                                </svg> 
+                            </span>
+                        </div>
+                        <div class="img-stats__stat">
+                            <img src="img/profile.jpg" alt="profile" class="img-stats__profile">
+                            <h4 class="profile__name profile__name--small">
+                                Ellie
+                            <svg class="icon profile__icon profile__icon--small">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            </h4>
+                            <span class="img-stats__star">
+                                3837
+                                <svg class="img-stats__icon icon">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg> 
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="split u-marbot-big">
+            <div class="left">
+                <div class="featured">
+                    <h2 class="text-primary-1 u-marbot-small">Featured Deviations</h2>
+<!-- START OF GALLERY -->
+                    <div class="featured-gallery u-marbot-big">
+
+                        <div class="deviation deviation--3 deviation--small fit">
+                            <div class="img-stats">
+                                <div class="img-stats__stat">
+                                    <h4 class="img-stats__title">Home</h4>
+                                    <span class="img-stats__comment">
+                                        12
+                                        <svg class="img-stats__icon icon">
+                                            <use xlink:href="img/sprite.svg#icon-message"></use>
+                                        </svg> 
+                                    </span>
+                                </div>
+                                <div class="img-stats__stat">
+                                    <img src="img/profile.jpg" alt="profile" class="img-stats__profile">
+                                    <h4 class="profile__name profile__name--small">
+                                        Ellie
+                                    <svg class="icon profile__icon profile__icon--small">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    </h4>
+                                    <span class="img-stats__star">
+                                        29
+                                        <svg class="img-stats__icon icon">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="deviation deviation--4 grid-c-2-4 fit">
+                            <div class="img-stats">
+                                <div class="img-stats__stat">
+                                    <h4 class="img-stats__title">Kill them</h4>
+                                    <span class="img-stats__comment">
+                                        23
+                                        <svg class="img-stats__icon icon">
+                                            <use xlink:href="img/sprite.svg#icon-message"></use>
+                                        </svg> 
+                                    </span>
+                                </div>
+                                <div class="img-stats__stat">
+                                    <img src="img/profile.jpg" alt="profile" class="img-stats__profile">
+                                    <h4 class="profile__name profile__name--small">
+                                        Ellie
+                                    <svg class="icon profile__icon profile__icon--small">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    </h4>
+                                    <span class="img-stats__star">
+                                        300
+                                        <svg class="img-stats__icon icon">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="deviation deviation--5 grid-c-1-3 fit">
+                            <div class="img-stats">
+                                <div class="img-stats__stat">
+                                    <h4 class="img-stats__title">Alone</h4>
+                                    <span class="img-stats__comment">
+                                        9
+                                        <svg class="img-stats__icon icon">
+                                            <use xlink:href="img/sprite.svg#icon-message"></use>
+                                        </svg> 
+                                    </span>
+                                </div>
+                                <div class="img-stats__stat">
+                                    <img src="img/profile.jpg" alt="profile" class="img-stats__profile">
+                                    <h4 class="profile__name profile__name--small">
+                                        Ellie
+                                    <svg class="icon profile__icon profile__icon--small">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    </h4>
+                                    <span class="img-stats__star">
+                                        12
+                                        <svg class="img-stats__icon icon">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="deviation deviation--6 grid-c-3-4 fit">
+                            <div class="img-stats">
+                                <div class="img-stats__stat">
+                                    <h4 class="img-stats__title">Kill</h4>
+                                    <span class="img-stats__comment">
+                                        100
+                                        <svg class="img-stats__icon icon">
+                                            <use xlink:href="img/sprite.svg#icon-message"></use>
+                                        </svg> 
+                                    </span>
+                                </div>
+                                <div class="img-stats__stat">
+                                    <img src="img/profile.jpg" alt="profile" class="img-stats__profile">
+                                    <h4 class="profile__name profile__name--small">
+                                        Ellie
+                                    <svg class="icon profile__icon profile__icon--small">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    </h4>
+                                    <span class="img-stats__star">
+                                        29
+                                        <svg class="img-stats__icon icon">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="deviation deviation--7 grid-c-1-4 fit">
+                            <div class="img-stats">
+                                <div class="img-stats__stat">
+                                    <h4 class="img-stats__title">A Celebration</h4>
+                                    <span class="img-stats__comment">
+                                        169
+                                        <svg class="img-stats__icon icon">
+                                            <use xlink:href="img/sprite.svg#icon-message"></use>
+                                        </svg> 
+                                    </span>
+                                </div>
+                                <div class="img-stats__stat">
+                                    <img src="img/profile.jpg" alt="profile" class="img-stats__profile">
+                                    <h4 class="profile__name profile__name--small">
+                                        Ellie
+                                    <svg class="icon profile__icon profile__icon--small">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    </h4>
+                                    <span class="img-stats__star">
+                                        1987
+                                        <svg class="img-stats__icon icon">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="deviation deviation--8 grid-c-1-3 fit">
+                            <div class="img-stats">
+                                <div class="img-stats__stat">
+                                    <h4 class="img-stats__title">What happened?</h4>
+                                    <span class="img-stats__comment">
+                                        999
+                                        <svg class="img-stats__icon icon">
+                                            <use xlink:href="img/sprite.svg#icon-message"></use>
+                                        </svg> 
+                                    </span>
+                                </div>
+                                <div class="img-stats__stat">
+                                    <img src="img/profile.jpg" alt="profile" class="img-stats__profile">
+                                    <h4 class="profile__name profile__name--small">
+                                        Ellie
+                                    <svg class="icon profile__icon profile__icon--small">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    </h4>
+                                    <span class="img-stats__star">
+                                        3213
+                                        <svg class="img-stats__icon icon">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="deviation deviation--9 grid-c-3-4 fit">
+                            <div class="img-stats">
+                                <div class="img-stats__stat">
+                                    <h4 class="img-stats__title">Guitar</h4>
+                                    <span class="img-stats__comment">
+                                        12
+                                        <svg class="img-stats__icon icon">
+                                            <use xlink:href="img/sprite.svg#icon-message"></use>
+                                        </svg> 
+                                    </span>
+                                </div>
+                                <div class="img-stats__stat">
+                                    <img src="img/profile.jpg" alt="profile" class="img-stats__profile">
+                                    <h4 class="profile__name profile__name--small">
+                                        Ellie
+                                    <svg class="icon profile__icon profile__icon--small">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    </h4>
+                                    <span class="img-stats__star">
+                                        12
+                                        <svg class="img-stats__icon icon">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="deviation deviation--10 grid-c-1-2 fit">
+                            <div class="img-stats">
+                                <div class="img-stats__stat">
+                                    <h4 class="img-stats__title">Red</h4>
+                                    <span class="img-stats__comment">
+                                        0
+                                        <svg class="img-stats__icon icon">
+                                            <use xlink:href="img/sprite.svg#icon-message"></use>
+                                        </svg> 
+                                    </span>
+                                </div>
+                                <div class="img-stats__stat">
+                                    <img src="img/profile.jpg" alt="profile" class="img-stats__profile">
+                                    <h4 class="profile__name profile__name--small">
+                                        Ellie
+                                    <svg class="icon profile__icon profile__icon--small">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    </h4>
+                                    <span class="img-stats__star">
+                                        7
+                                        <svg class="img-stats__icon icon">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="deviation deviation--11 grid-c-2-4 fit">
+                            <div class="img-stats">
+                                <div class="img-stats__stat">
+                                    <h4 class="img-stats__title">I'm sorry, Joel.</h4>
+                                    <span class="img-stats__comment">
+                                        389
+                                        <svg class="img-stats__icon icon">
+                                            <use xlink:href="img/sprite.svg#icon-message"></use>
+                                        </svg> 
+                                    </span>
+                                </div>
+                                <div class="img-stats__stat">
+                                    <img src="img/profile.jpg" alt="profile" class="img-stats__profile">
+                                    <h4 class="profile__name profile__name--small">
+                                        Ellie
+                                    <svg class="icon profile__icon profile__icon--small">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    </h4>
+                                    <span class="img-stats__star">
+                                        21379
+                                        <svg class="img-stats__icon icon">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deviation deviation--12 grid-c-1-4 fit">
+                            <div class="img-stats">
+                                <div class="img-stats__stat">
+                                    <h4 class="img-stats__title">Cruel Winter</h4>
+                                    <span class="img-stats__comment">
+                                        6
+                                        <svg class="img-stats__icon icon">
+                                            <use xlink:href="img/sprite.svg#icon-message"></use>
+                                        </svg> 
+                                    </span>
+                                </div>
+                                <div class="img-stats__stat">
+                                    <img src="img/profile.jpg" alt="profile" class="img-stats__profile">
+                                    <h4 class="profile__name profile__name--small">
+                                        Ellie
+                                    <svg class="icon profile__icon profile__icon--small">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    </h4>
+                                    <span class="img-stats__star">
+                                        2
+                                        <svg class="img-stats__icon icon">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                      
+                    </div>
+<!-- END OF GALLERY -->
+                    <h2 class="text-primary-1 u-marbot-small">Watchers &ndash; 412.3k</h2>
+<!-- START OF WATCHERS -->
+                    <div class="watchers u-marbot-big">
+                        <div class="watcher">
+                            <img src="/img/user (3).jpg" alt="icon" class="watcher__icon">
+                            <span class="watcher__name">Ellie2341</span>
+                        </div>
+                        <div class="watcher">
+                            <img src="/img/user (4).jpg" alt="icon" class="watcher__icon">
+                            <span class="watcher__name">JoelIsLife</span>
+                        </div><div class="watcher">
+                            <img src="/img/user (5).jpg" alt="icon" class="watcher__icon">
+                            <span class="watcher__name">TLOU <3</span>
+                        </div><div class="watcher">
+                            <img src="/img/user (6).jpg" alt="icon" class="watcher__icon">
+                            <span class="watcher__name">Fireflies12</span>
+                        </div><div class="watcher">
+                            <img src="/img/user (1).jpg" alt="icon" class="watcher__icon">
+                            <span class="watcher__name">ReleaseItNow</span>
+                        </div><div class="watcher">
+                            <img src="/img/user (8).jpg" alt="icon" class="watcher__icon">
+                            <span class="watcher__name">WaitingSucks</span>
+                        </div><div class="watcher">
+                            <img src="/img/user (11).jpg" alt="icon" class="watcher__icon">
+                            <span class="watcher__name">EllieCute</span>
+                        </div><div class="watcher">
+                            <img src="/img/user (12).jpg" alt="icon" class="watcher__icon">
+                            <span class="watcher__name">Marlyn</span>
+                        </div><div class="watcher">
+                            <img src="/img/user (13).jpg" alt="icon" class="watcher__icon">
+                            <span class="watcher__name">SamDead</span>
+                        </div><div class="watcher">
+                            <img src="/img/user (14).jpg" alt="icon" class="watcher__icon">
+                            <span class="watcher__name">Clicker69</span>
+                        </div><div class="watcher">
+                            <img src="/img/user (15).jpg" alt="icon" class="watcher__icon">
+                            <span class="watcher__name">Dina12</span>
+                        </div><div class="watcher">
+                            <img src="/img/user (2).jpg" alt="icon" class="watcher__icon">
+                            <span class="watcher__name">wtf123</span>
+                        </div>
+                    </div>
+<!-- END OF WATCHERS -->
+                    <h2 class="text-primary-1 u-marbot-small">Watching &ndash; 4.3k</h2>
+<!-- START OF WATCHING -->
+                    <div class="watchers u-marbot-big">
+                        <div class="watcher">
+                            <img src="/img/user (3).jpg" alt="icon" class="watcher__icon">
+                            <span class="watcher__name">Druckman123</span>
+                        </div>
+                        <div class="watcher">
+                            <img src="/img/user (4).jpg" alt="icon" class="watcher__icon">
+                            <span class="watcher__name">NaughtyDoggo</span>
+                        </div><div class="watcher">
+                            <img src="/img/user (5).jpg" alt="icon" class="watcher__icon">
+                            <span class="watcher__name">ReleaseWhen?</span>
+                        </div><div class="watcher">
+                            <img src="/img/user (6).jpg" alt="icon" class="watcher__icon">
+                            <span class="watcher__name">SadDelay</span>
+                        </div><div class="watcher">
+                            <img src="/img/user (1).jpg" alt="icon" class="watcher__icon">
+                            <span class="watcher__name">EpicGame</span>
+                        </div><div class="watcher">
+                            <img src="/img/user (8).jpg" alt="icon" class="watcher__icon">
+                            <span class="watcher__name">123Hacks</span>
+                        </div><div class="watcher">
+                            <img src="/img/user (11).jpg" alt="icon" class="watcher__icon">
+                            <span class="watcher__name">ItNothing</span>
+                        </div><div class="watcher">
+                            <img src="/img/user (12).jpg" alt="icon" class="watcher__icon">
+                            <span class="watcher__name">BillFatGuy</span>
+                        </div><div class="watcher">
+                            <img src="/img/user (13).jpg" alt="icon" class="watcher__icon">
+                            <span class="watcher__name">DavidPedo</span>
+                        </div>
+                    </div>
+<!-- END OF WATCHING -->
+                    <h2 class="text-primary-1 u-marbot-small">Spotlight</h2>
+
+                    <div class="spotlight">
+                        <div class="deviation deviation--13 deviation--big u-marbot-big">
+                            <div class="img-stats">
+                                <div class="img-stats__stat">
+                                    <h4 class="img-stats__title">Peaceful</h4>
+                                    <span class="img-stats__comment">
+                                        127
+                                        <svg class="img-stats__icon icon">
+                                            <use xlink:href="img/sprite.svg#icon-message"></use>
+                                        </svg> 
+                                    </span>
+                                </div>
+                                <div class="img-stats__stat">
+                                    <img src="img/profile.jpg" alt="profile" class="img-stats__profile">
+                                    <h4 class="profile__name profile__name--small">
+                                        Ellie
+                                    <svg class="icon profile__icon profile__icon--small">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    </h4>
+                                    <span class="img-stats__star">
+                                        2.2k
+                                        <svg class="img-stats__icon icon">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="deviation deviation--14 deviation--big u-marbot-big">
+                            <div class="img-stats">
+                                <div class="img-stats__stat">
+                                    <h4 class="img-stats__title">Chaos</h4>
+                                    <span class="img-stats__comment">
+                                        123
+                                        <svg class="img-stats__icon icon">
+                                            <use xlink:href="img/sprite.svg#icon-message"></use>
+                                        </svg> 
+                                    </span>
+                                </div>
+                                <div class="img-stats__stat">
+                                    <img src="img/profile.jpg" alt="profile" class="img-stats__profile">
+                                    <h4 class="profile__name profile__name--small">
+                                        Ellie
+                                    <svg class="icon profile__icon profile__icon--small">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    </h4>
+                                    <span class="img-stats__star">
+                                        2.9k
+                                        <svg class="img-stats__icon icon">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="right">
+                <h2 class="text-primary-1 u-marbot-small">About Ellie</h2>
+<!-- START OF ABOUT -->
+                <div class="about u-marbot-big">
+                    <p class="about__desc">Tough Gal | Don't mess with me | Holy Shit Joel!</p>
+                    <p class="about__info">
+                        <span class="about__birthday">
+                            <svg class="about__icon icon">
+                                <use xlink:href="img/sprite.svg#icon-target"></use>
+                            </svg>
+                            May 29,2020
+                        </span>
+                        <span class="about__location">
+                            <svg class="about__icon icon">
+                                <use xlink:href="img/sprite.svg#icon-location2"></use>
+                            </svg>
+                            Seattle ,USA
+                        </span>
+                    </p>
+
+                    <p class="about__text">
+                        <span class="about__statement">
+                            <svg class="about__icon icon">
+                                <use xlink:href="img/sprite.svg#icon-bubble"></use>
+                            </svg>
+                            Can't wait to play the game
+                        </span>
+                    </p>
+
+                    <div class="about__badges">
+                        <span>badges</span>
+
+                        <div class="badges">
+                            <svg class="about__icon icon about__badge">
+                                <use xlink:href="img/sprite.svg#icon-compass2"></use>
+                            </svg>
+                            <svg class="about__icon icon about__badge">
+                                <use xlink:href="img/sprite.svg#icon-warning"></use>
+                            </svg>
+                            <svg class="about__icon icon about__badge">
+                                <use xlink:href="img/sprite.svg#icon-trophy"></use>
+                            </svg>
+                        </div>
+                        
+                    </div>
+                </div>
+<!-- END OF ABOUT -->
+
+                <h2 class="text-primary-1 u-marbot-small">Comments &ndash; 40k</h2>
+
+                <div class="comments">
+                    <div class="comment u-marbot-small">
+                        <img src="img/user (2).jpg" alt="commenter" class="comment__user">
+
+                        <div class="comment__box">
+                            <p class="comment__message">
+                                <span class="comment__name">Dina123</span>
+                                I wanna play the Last of Us Part II. Please !
+                            </p>
+                            <div class="comment__actions">
+                                <span>Reply</span>
+                                <span class="comment__heart">
+                                    <svg class="comment__icon icon">
+                                        <use xlink:href="img/sprite.svg#icon-heart-outlined"></use>
+                                    </svg>
+                                </span>
+
+                                2 days ago
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment u-marbot-small">
+                        <img src="img/user (13).jpg" alt="commenter" class="comment__user">
+
+                        <div class="comment__box">
+                            <p class="comment__message">
+                                <span class="comment__name">Patrick99</span>
+                                Dina is mine
+                            </p>
+                            <div class="comment__actions">
+                                <span>Reply</span>
+                                <span class="comment__heart">
+                                    <svg class="comment__icon icon">
+                                        <use xlink:href="img/sprite.svg#icon-heart-outlined"></use>
+                                    </svg>
+                                </span>
+
+                                5 days ago
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment u-marbot-small">
+                        <img src="img/user (4).jpg" alt="commenter" class="comment__user">
+
+                        <div class="comment__box">
+                            <p class="comment__message">
+                                <span class="comment__name">Gamer69</span>
+                                Cannot wait to play you!
+                            </p>
+                            <div class="comment__actions">
+                                <span>Reply</span>
+                                <span class="comment__heart">
+                                    <svg class="comment__icon icon">
+                                        <use xlink:href="img/sprite.svg#icon-heart-outlined"></use>
+                                    </svg>
+                                </span>
+
+                                14 days ago
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment u-marbot-small">
+                        <img src="img/user (6).jpg" alt="commenter" class="comment__user">
+
+                        <div class="comment__box">
+                            <p class="comment__message">
+                                <span class="comment__name">David12</span>
+                                You are such a fine young lady!
+                            </p>
+                            <div class="comment__actions">
+                                <span>Reply</span>
+                                <span class="comment__heart">
+                                    <svg class="comment__icon icon">
+                                        <use xlink:href="img/sprite.svg#icon-heart-outlined"></use>
+                                    </svg>
+                                </span>
+
+                                9 days ago
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment u-marbot-small">
+                        <img src="img/user (1).jpg" alt="commenter" class="comment__user">
+
+                        <div class="comment__box">
+                            <p class="comment__message">
+                                <span class="comment__name">Marlyin</span>
+                                You are the cure to mankind!
+                            </p>
+                            <div class="comment__actions">
+                                <span>Reply</span>
+                                <span class="comment__heart">
+                                    <svg class="comment__icon icon">
+                                        <use xlink:href="img/sprite.svg#icon-heart-outlined"></use>
+                                    </svg>
+                                </span>
+
+                                5 years ago
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <a href="#" class="navigation__link navigation__logo colored">🍥ClonedArt</a>
+
+            <ul class="footer__list">
+                <li class="footer__item"><a href="#" class="footer__link">ABOUT</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Core Membership</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
+            </ul>
+
+            <ul class="footer__list">
+                <li class="footer__item"><a href="#" class="footer__link">Developers</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Advertise</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Terms of Service</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Etiquette</a></li>
+            </ul>
+
+            <ul class="footer__list">
+                <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Copyright Policy</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Help & faq</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
+            </ul>
+
+            <div class="footer__social">
+                <svg class="footer__icon icon">
+                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                </svg>
+                <svg class="footer__icon icon">
+                    <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </svg>
+                <svg class="footer__icon icon">
+                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                </svg>
+            </div>
+        </div>
+
+        <p class="footer__copyright">
+            &copy; All Rights Reserved ClonedArt by Nico 2020
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,38 @@
+.footer{
+    background-color: $color-footer-2;
+    padding:10rem 0 8rem 0;
+    color: $color-footer;
+  
+    .container{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        justify-items: center;
+        align-items: start;
+    }
+
+    &__item{
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+    }
+
+    &__link{
+        &:hover{
+            color: $color-primary;
+        }
+    }
+
+    &__icon{
+        margin: 0 0.5rem;
+        cursor: pointer;
+        fill: $color-footer;
+        &:hover{
+            fill:$color-primary;
+        }
+    }
+
+    &__copyright{
+        text-align: center;
+        font-size: 0.9rem;
+        transform: translateY(5rem);
+    }
+}

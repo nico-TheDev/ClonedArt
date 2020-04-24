@@ -1,0 +1,46 @@
+
+
+
+.img-stats{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    background-image: linear-gradient(to right,rgba(0,0,0,0.4),rgba(white,0.1));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0;
+    transition: all 300ms;
+    
+
+    &__profile{
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0.5rem;
+    }
+
+    &__stat{
+        display: flex;
+        &:first-child{
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    &__title{
+        margin-right: auto;
+    }
+
+    &__comment,
+    &__star{
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon{
+        margin-left: 0.4rem;
+        fill: $color-primary;
+    }
+}
+

@@ -1,0 +1,65 @@
+.navigation{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    align-items: stretch;
+    padding: 0 2rem;
+    position: fixed;
+    top: 0;
+    background-color: $color-black-dark;
+    z-index: 10;
+    
+
+    &__logo{
+        font-size: 1.5rem;
+        text-transform: capitalize !important;
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &--1{
+            .navigation__item{
+                margin-right: 2rem;
+            }
+        }
+
+        &--2{
+            .navigation__item{
+                margin-left: 2rem;
+            }
+        }
+    }
+
+    &__item{
+        padding: 0.9rem 0;
+    }
+
+    &__link{
+        text-transform: uppercase;
+        position: relative;
+        @include flexCenter;
+
+        &:hover{
+            color: $color-primary;
+        }
+        
+    }
+    &__search{
+        margin-right: 0.8rem;
+        fill:currentColor;
+    }
+
+    &__user{
+        background-color: gray;
+        fill:$color-black-light;
+        box-sizing: content-box;
+        padding:0.2rem;
+
+        &:hover{
+            fill: $color-primary;
+        }
+
+    }
+}

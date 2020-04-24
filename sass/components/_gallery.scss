@@ -1,0 +1,16 @@
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(24rem,1fr));
+    grid-gap: 1rem;
+}
+
+.featured-gallery{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,13rem);
+    grid-template-rows: repeat(6,13rem);
+    grid-gap: 0.5rem;
+
+
+}

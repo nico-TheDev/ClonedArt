@@ -1,0 +1,75 @@
+.profilenav{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0.3rem 2rem rgba(black,0.8);
+    padding-left:1.5rem;
+    &__list{
+        display: flex;
+        align-items: stretch;
+
+        &--1{
+            & > *{
+                margin-right: 3rem;
+            }
+        }
+       
+    }
+
+    &__item{
+        padding: 1rem 0;
+    }
+
+    &__watch{
+        padding: 1rem 2rem;
+        background-color: $color-primary-dark;
+        color: $color-black-dark;
+        position: relative;
+        overflow: hidden;
+        &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(135deg,rgba(white,0.3) 50px,transparent 30px);
+            transition: all 300ms;
+            z-index: 1;
+
+        }
+
+        &:hover::before{
+            left: 0;
+        }
+
+        &:hover{
+            color: $color-black-dark!important;
+        }
+       
+    }
+
+    &__note{
+        padding: 1rem 2rem;
+        background-color: $color-white;
+        color: $color-black-dark;
+        position: relative;
+        z-index: 3;
+    }
+
+    &__icon{
+        margin-right: 1rem;
+        fill: white;
+
+        &:hover{
+            fill: $color-primary;
+        }
+    }
+
+    &__link{
+        &:hover{
+             color: $color-primary;
+        }
+    }
+
+}

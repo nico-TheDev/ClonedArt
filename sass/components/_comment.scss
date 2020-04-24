@@ -1,0 +1,62 @@
+.comments{
+    background-color: $color-black-light;
+    padding: 2rem;
+}
+
+.comment{
+    display: flex;
+
+    &__user{
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 2rem;
+    }
+
+    &__box{
+        flex: 1;
+    }
+
+    &__name{
+        display: block;
+        margin-bottom: 0.3rem;
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+
+    &__message{
+        background-color: $color-footer;
+        padding: 1rem;
+        width: 100%;
+        margin-bottom: 0.4rem;
+        position: relative;
+
+        &::before{
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: 1.5rem solid $color-footer;
+            border-left: 1.5rem solid transparent;
+            position: absolute;
+            top: 1rem;
+            left:-1.5rem;
+
+        }
+    }
+
+    &__actions{
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+        & > * {
+            margin-right: 1rem;
+        }
+    }
+
+    &__heart{
+        &:hover{
+            fill: $color-primary;
+            cursor: pointer;
+        }
+    }
+}

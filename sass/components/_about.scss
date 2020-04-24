@@ -1,0 +1,43 @@
+.about{
+    background-color: $color-black-light;
+    padding: 2rem;
+    font-size: 1.1rem;
+
+    & > *:not(:last-child){
+        margin-bottom: 2rem;
+    }
+
+    &__info{
+      span{
+        display: inline-flex;
+        align-items: center;
+        margin-right: 2rem;
+      }
+    }
+
+    &__icon{
+        fill:$color-primary;
+        margin-right: 0.5rem;
+    }
+
+    &__statement{
+        display: inline-flex;
+        align-items: center;
+    }
+
+    &__badges{
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+    }
+
+    &__badge{
+        width: 2.5rem;
+        height: 2.5rem;
+        border: 3px solid $color-primary;
+        padding: 0.4rem;
+        box-sizing: content-box;
+        border-radius: 0.5rem;
+    }
+}
