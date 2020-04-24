@@ -2,12 +2,20 @@
     background-color: $color-footer-2;
     padding:10rem 0 8rem 0;
     color: $color-footer;
-  
+    @include query(cps){
+        padding: 7rem 0;
+    }
     .container{
         display: grid;
         grid-template-columns: repeat(5,1fr);
         justify-items: center;
         align-items: start;
+
+        @include query(cp){
+            grid-template-columns: 1fr;
+            grid-row-gap: 3rem;
+            text-align: center;
+        }
     }
 
     &__item{

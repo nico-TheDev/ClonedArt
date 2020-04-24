@@ -9,7 +9,9 @@
     top: 0;
     background-color: $color-black-dark;
     z-index: 10;
-    
+    @include query(cps){
+        align-items: center;
+    }
 
     &__logo{
         font-size: 1.5rem;
@@ -30,10 +32,16 @@
                 margin-left: 2rem;
             }
         }
+
+        @include query(cps){
+            display: none;
+        }
+   
     }
 
     &__item{
         padding: 0.9rem 0;
+    
     }
 
     &__link{
@@ -61,5 +69,16 @@
             fill: $color-primary;
         }
 
+    }
+}
+
+
+.hide{
+    display: none;
+
+    @include query(cps){
+        display: block;
+        margin: 0 auto;
+    
     }
 }

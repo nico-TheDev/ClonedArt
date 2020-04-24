@@ -71,6 +71,7 @@
 
     &__stat{
         display: inline-block;
+        line-height: 2;
 
         &:not(:first-child)::before{
             content: "";
@@ -79,6 +80,16 @@
             background-color: white;
             display: inline-block;
             margin: 0 0.5rem;
+
+            @include query(cps){
+                    display: none;
+            }
+        }
+
+        @include query(cps){
+            &:nth-child(even){
+                display: none;
+            }
         }
 
         &:hover{

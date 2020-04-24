@@ -2,6 +2,26 @@
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(24rem,1fr));
     grid-gap: 1rem;
+
+    @include query(tabl){
+        grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    }
+
+    @include query(tabp){
+        grid-template-columns: repeat(auto-fit,minmax(16rem,1fr));
+    }
+
+    @media only screen and (max-width:53.75em){
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include query(cp){
+        grid-template-columns: 1fr;
+    }
+
+
+
+
 }
 
 .featured-gallery{
@@ -12,5 +32,18 @@
     grid-template-rows: repeat(6,13rem);
     grid-gap: 0.5rem;
 
+    @media only screen and (max-width:860px){
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(6,20rem);
+
+    }
+
+    @include query(cps){
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 2rem;
+        width: 90%;
+        justify-items: center;
+        margin-left: 1rem;
+    }
 
 }

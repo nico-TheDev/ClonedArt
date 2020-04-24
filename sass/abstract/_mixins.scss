@@ -9,4 +9,16 @@
     @if ($breakpoint == cp){
         @media only screen and (max-width:37.5em){@content}; 
     }
+    @if ($breakpoint == cps){
+        @media only screen and (max-width:31em){@content}; 
+    }
+    @if ($breakpoint == tabp){
+        @media only screen and (max-width:56.25em){@content}; 
+    }
+    @if ($breakpoint == tabl){
+        @media only screen and (max-width:75em){@content}; 
+    }
+    @if ($breakpoint == wide){
+        @media only screen and (min-width:112.5em){@content}; 
+    }
 }

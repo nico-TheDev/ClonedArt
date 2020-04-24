@@ -4,4 +4,14 @@
     background-position: center;
     background-size: cover;
     position: relative;
+
+
+    @include query(tabp){
+        height: 110vh;
+    }
+
+    @include query(cps){
+        height: 100vh;
+        margin-bottom: 2rem;
+    }
 }
